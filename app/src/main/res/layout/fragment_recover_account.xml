@@ -53,27 +53,40 @@
                 android:textColor="@color/white" />
 
             <EditText
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_edit"
                 android:hint="email@email.com"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
                 android:padding="14dp"
 
                 />
 
 
-
-
             <Button
+                android:id="@+id/btnRecover"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_button"
-                android:text="Criar conta"
+                android:text="Recuperar senha"
                 android:textAllCaps="false"
                 android:textColor="@color/color_default"
                 app:backgroundTint="@null" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:layout_marginTop="8dp"
+                tools:visibility="visible"
+                android:indeterminateTint="@color/white"
+                />
 
         </LinearLayout>
 
